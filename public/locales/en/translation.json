@@ -1,0 +1,48 @@
+{
+  "title": "Your local partner",
+  "nav": {
+    "Solutions": "Solutions",
+    "Directions": "Directions",
+    "Contacts": "Contacts",
+    "BecomeAPartner": "Become A Partner",
+    "Vocation": "Vocation",
+    "AboutUs": "About Us"
+  },
+  "language": "ENG",
+  "work": {
+    "title": "How we are working",
+    "l1": "Marketing",
+    "l2": "Logistics",
+    "l3": "Accounting",
+    "l4": "bla bla bla",
+    "r1": "text1",
+    "r2": "text2",
+    "r3": "text3",
+    "r4": "text4"
+  },
+  "categories": {
+    "btn": "more",
+    "coffee": {
+      "title": "Coffee",
+      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+    },
+    "confectionery": {
+      "title": "Сonfectionery",
+      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+    },
+    "toppers": {
+      "title": "Toppers",
+      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+    },
+    "chemicals": {
+      "title": "Household chemicals",
+      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+    }
+  },
+  "footer": {
+    "title": "Contact",
+    "find": "You Can Find Us Here",
+    "address": "Address",
+    "map": "FIND ON MAPS"
+  }
+}

@@ -1,0 +1,44 @@
+
+.expertise {
+  background-color: #EFFFFF;
+  padding: 20px;
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.011em;
+    color: #000000;
+    i {
+      text-decoration: none;
+      cursor: pointer;
+      font-style: normal;
+      position: relative;
+      transition: 0.2s;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px; /* Высота линии */
+        background-color: black; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+      }
+      &:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px; /* Высота линии */
+        background-color: #1b9f9b; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+      }
+      &:hover {
+        color: #1b9f9b;
+      }
+    }
+  }
+}
