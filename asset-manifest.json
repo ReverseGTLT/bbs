@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/bbs/static/css/main.1c4c1254.css",
+    "main.js": "/bbs/static/js/main.3078914e.js",
+    "static/media/getFetch.cjs": "/bbs/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "index.html": "/bbs/index.html",
+    "main.1c4c1254.css.map": "/bbs/static/css/main.1c4c1254.css.map",
+    "main.3078914e.js.map": "/bbs/static/js/main.3078914e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c4c1254.css",
+    "static/js/main.3078914e.js"
+  ]
+}
