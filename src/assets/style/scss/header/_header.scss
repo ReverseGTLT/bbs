@@ -1,3 +1,6 @@
+
+@use "../presets" as *;
+
 .header {
   &-top {
     background: #75DDDA;
@@ -12,8 +15,14 @@
       line-height: 29px;
       color: #FFFFFF;
       transition: 0.2s;
+      @include lg {
+        font-size: 20px;
+      }
       &:hover {
         transform: translateX(20px);
+        @include lg {
+          transform: translateX(0);
+        }
       }
     }
     &__social {
@@ -26,15 +35,22 @@
     }
   }
   &-bottom {
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__nav {
       display: flex;
       justify-content: flex-end;
     }
     &__list {
-      //padding: 30px;
       display: flex;
-      gap: 20px;
+      gap: 10px;
       justify-content: flex-end;
+      @include lg {
+        display: none;
+      }
     }
     &__link {
       text-decoration: none;
@@ -55,7 +71,6 @@
       position: relative;
       transition: 0.2s;
       &:hover {
-        transform: scale(1.1);
         color: #75DDDA;
       }
       &-list {
@@ -66,8 +81,6 @@
         padding: 20px;
         flex-direction: column;
         gap: 10px;
-        //justify-content: center;
-        //align-items: center;
         position: absolute;
         top: 60px;
         right: 0;
@@ -87,9 +100,9 @@
   }
 }
 
-.header-bottom__language:hover .header-bottom__language-list {
-  display: flex;
-}
+//.header-bottom__language:hover .header-bottom__language-list {
+//  display: flex;
+//}
 
 .social-images {
   transition: 0.2s;
@@ -99,4 +112,22 @@
 }
 .invisible {
   display: none;
+}
+
+.nav-visible {
+  display: block;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.flex {
+  display: flex;
 }

@@ -2,7 +2,10 @@ import {useTranslation} from "react-i18next";
 import {useState} from "react";
 
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import {Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 export function HowWork() {
     const { t } = useTranslation();
@@ -49,7 +52,7 @@ export function HowWork() {
                 <h1 className="work__title">{t("work.title")}</h1>
             </Fade>
 
-            <div className="work-box">
+            <div className="work-box desctop">
                 <div className="work-titles">
                     <Fade down>
                         <h2 onClick={pushTextToDescription}
@@ -76,6 +79,50 @@ export function HowWork() {
                     <p className={`work-descriptions__text ${isVisible ? 'visible' : ''}`} data-description="titleText1">{onClicked}</p>
                 </div>
             </div>
+            <div className="work-mobile">
+                <Swiper
+                    pagination={{
+                        dynamicBullets: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    slidesPerView="auto"
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    <SwiperSlide>
+                        <Fade left>
+                            <div className="slideContainer">
+                                <h2 className="work-titles__text" id="titleText1">{t("work.l1")}
+                                </h2>
+                                <p className="work-descriptions__text">{t("work.r1")}</p>
+                            </div>
+                        </Fade>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slideContainer">
+                            <h2 className="work-titles__text" id="titleText1">{t("work.l2")}
+                            </h2>
+                            <p className="work-descriptions__text">{t("work.r2")}</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slideContainer">
+                            <h2 className="work-titles__text" id="titleText1">{t("work.l3")}
+                            </h2>
+                            <p className="work-descriptions__text">{t("work.r3")}</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slideContainer">
+                            <h2 className="work-titles__text" id="titleText1">{t("work.l4")}
+                            </h2>
+                            <p className="work-descriptions__text">{t("work.r4")}</p>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+
         </div>
     )
 }

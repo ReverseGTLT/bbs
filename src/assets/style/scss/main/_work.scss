@@ -1,3 +1,6 @@
+
+@use "../presets" as *;
+
 .work {
   &__title {
     font-weight: 700;
@@ -5,6 +8,9 @@
     line-height: 44px;
     color: #000000;
     text-align: center;
+    @include lg {
+      font-size: 30px;
+    }
   }
   &-box {
     background-color: #70D4D6;
@@ -27,12 +33,22 @@
       color: #A6ECEF;
       //transition: 0.2s;
       cursor: pointer;
+      @include lg {
+        text-align: center;
+        color: #FFFFFF;
+      }
       &:hover {
         color: #cbf6f5;
+        @include lg {
+          color: white;
+        }
 
       }
       &:active {
         color: #1b9f9b;
+        @include lg {
+          color: white;
+        }
       }
     }
   }
@@ -59,10 +75,38 @@
   margin-right: -4px;
   padding-right: 40px;
   padding-block: 20px;
+  @include lg {
+    padding-right: 0;
+  }
 }
 
 .work-titles__text.selected {
   border-right: 4px solid rgba(0, 178, 182, 0.75);
   color: white;
   padding-right: 36px;
+  @include lg {
+    border-right: none;
+  }
+}
+
+.desctop {
+  @include lg {
+    display: none;
+  }
+}
+
+.work-mobile {
+  background-color: #70D4D6;
+  padding-block: 50px;
+  @include lg-min {
+    display: none;
+  }
+  h2 {
+    padding-bottom: 50px;
+  }
+  p {
+    transform: scale(1);
+    text-align: center;
+    padding-bottom: 60px;
+  }
 }

@@ -1,4 +1,6 @@
 
+@use "../presets" as *;
+
 .footer {
   background-position: center;
   background-size: cover;
@@ -9,6 +11,9 @@
     background: rgba(0,178,182,0.7);
     padding: 100px;
     color: #00B2B6;
+    @include lg {
+      padding-block: 30px;
+    }
   }
   &__title {
     font-weight: 700;
@@ -18,14 +23,27 @@
     letter-spacing: -0.011em;
     color: #FFFFFF;
     padding-bottom: 60px;
+    @include lg {
+      font-size: 36px;
+    }
   }
   &-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    @include lg {
+      flex-direction: column;
+    }
   }
   &-address {
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
     &__title {
       font-weight: 600;
       font-size: 24px;
@@ -61,6 +79,9 @@
     }
     &__number {
       padding: 10px;
+    }
+    .header-top__social-box {
+      padding-top: 20px;
     }
   }
 }
