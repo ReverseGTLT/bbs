@@ -11,7 +11,7 @@ export function Footer() {
         console.log(showMap)
     }
     return (
-        <div className="footer" style={{backgroundImage: 'url(./images/footer.png)'}}>
+        <footer className="footer" style={{backgroundImage: 'url(./images/footer.png)'}}>
             <div className="footer-container">
                 <p className="footer__title">{t("footer.title")}</p>
                 <div className="footer-box">
@@ -38,6 +38,6 @@ export function Footer() {
                     width="600" height="450" style={{border:"0"}} allowFullScreen="" loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>}
-        </div>
+        </footer>
     )
 }

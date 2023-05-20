@@ -47,7 +47,7 @@ export function HowWork() {
     }
 
     return (
-        <div className="work">
+        <section className="work">
             <Fade down duration={500} delay={500}>
                 <h1 className="work__title">{t("work.title")}</h1>
             </Fade>
@@ -87,8 +87,8 @@ export function HowWork() {
                     modules={[Pagination]}
                     className="mySwiper"
                     slidesPerView="auto"
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => {}}
+                    onSwiper={(swiper) => {}}
                 >
                     <SwiperSlide>
                         <Fade left>
@@ -123,6 +123,6 @@ export function HowWork() {
                 </Swiper>
             </div>
 
-        </div>
+        </section>
     )
 }

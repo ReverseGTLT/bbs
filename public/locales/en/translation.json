@@ -25,11 +25,11 @@
     "btn": "more",
     "coffee": {
       "title": "Coffee",
-      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+      "description": "BBS provides a full range of services in Batumi to provide and supply coffee houses, restaurants and hotels with all kinds of equipment and goods: coffee machines, coffee grinders, coffee, tea, hot chocolate, as well as utensils, inventory and accessories."
     },
     "confectionery": {
       "title": "Сonfectionery",
-      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+      "description": "Our team has been working with suppliers from Turkey, Italy, Spain, France, Poland since 2013 and offers a wide range of confectionery equipment and ingredients for baking and sweets.\nIt is beneficial to cooperate with cafes and restaurants, confectioneries, coffee shops and bakeries, dessert manufacturers.\nHere you can order goods for confectioners with delivery in Georgia."
     },
     "toppers": {
       "title": "Toppers",
@@ -37,7 +37,7 @@
     },
     "chemicals": {
       "title": "Household chemicals",
-      "description": "We believe that coffee is more than just a drink:  It’s a culture, an economy, an art, a science — and a passion. Whether you're new to the brew or an espresso expert, whether you prefer it with or without caffeine, there's always more to learn about America's favorite beverage."
+      "description": "BBS will be a great partner in the cleaning industry as well. We offer a full range of services to solve problems of sanitation and hygiene in institutions of various profiles: hospitals, schools, hotels, cafes, restaurants, social and communal facilities in Batumi. Our goods are also in demand among private consumers.\n\nIn addition, we are engaged in the installation and maintenance of sanitary equipment and staff training."
     }
   },
   "footer": {
@@ -45,5 +45,37 @@
     "find": "You Can Find Us Here",
     "address": "Address",
     "map": "FIND ON MAPS"
+  },
+  "about": {
+    "title": "Our team",
+    "how": "How we work",
+    "values": {
+      "title": "Company values",
+      "description": "Certified BBS specialists work throughout Adjara - they are available to dealers and their customers both in Batumi and far beyond its borders. They are involved in pre-sales and sales, generation of needs, engineering."
+    },
+    "impotant": {
+      "title": "Tomorrow is more important than today",
+      "description": "We are building the world we want to live in. We are focused on long-term relationships with partners and employees and are ready to be flexible and compromise today, if a joint tomorrow depends on it."
+    },
+    "balance": {
+      "title": "Balance of interests",
+      "description": "We create an environment where people with different abilities and talents work effectively together. “The right of the strong” does not work for us. In difficult situations, we look for compromises and go forward."
+    },
+    "ethics": {
+      "title": "Ethics",
+      "description": "For us, ethics is activity, indifference, respect and responsibility. We are sure that there are no “foreign problems” and “foreign work”. And if we make a promise, we try to keep it."
+    },
+    "correctness": {
+      "title": "Correctness",
+      "description": "We build relationships every day — with colleagues, between departments, with the outside world. A comfortable environment allows employees to feel confident and free in a team."
+    },
+    "development": {
+      "title": "Continuous development",
+      "description": "Компания успешна длительное время при условии непрерывных улучшений и инноваций. Мы любим говорить, что если хочешь куда-то попасть, «надо бежать вдвое быстрее»."
+    },
+    "professionalism": {
+      "title": "Professionalism",
+      "description": "A professional is a person with extensive experience behind him, who at the same time doubts that he knows and can do everything, therefore he constantly builds up competencies in his own or related fields."
+    }
   }
 }

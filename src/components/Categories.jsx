@@ -5,7 +5,7 @@ export function Categories () {
 
     const { t } = useTranslation();
     return (
-        <div className="categories">
+        <section className="categories">
             <div className="categories-box">
                 <CategoriesItem
                     id={"categoriesItemInfo1"}
@@ -36,6 +36,6 @@ export function Categories () {
                     btn={t("categories.btn")}
                 />
             </div>
-        </div>
+        </section>
     )
 }

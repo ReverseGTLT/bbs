@@ -9,7 +9,7 @@ import {Home} from "../pages/Home";
 
 export function Main() {
     return (
-        <div className="main">
+        <aside className="main">
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
                 <Route exact path="/solutions" element={<Solutions/>}/>
@@ -19,6 +19,6 @@ export function Main() {
                 <Route exact path="/vocation" element={<Vocations/>}/>
                 <Route exact path="/about_us" element={<AboutAs/>}/>
             </Routes>
-        </div>
+        </aside>
     )
 }
