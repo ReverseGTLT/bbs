@@ -57,6 +57,9 @@
       color: black;
       transition: 0.2s;
       padding: 30px 10px;
+      @include lg {
+        padding: 0;
+      }
       &:hover {
         color: #75DDDA;
         transform: scale(1.1);
@@ -100,9 +103,11 @@
   }
 }
 
-//.header-bottom__language:hover .header-bottom__language-list {
-//  display: flex;
-//}
+.header-bottom__list-item {
+  @include lg {
+    padding: 15px 10px;
+  }
+}
 
 .social-images {
   transition: 0.2s;

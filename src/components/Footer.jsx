@@ -11,7 +11,7 @@ export function Footer() {
         console.log(showMap)
     }
     return (
-        <footer className="footer" style={{backgroundImage: 'url(./images/footer.png)'}}>
+        <footer id="contacts" className="footer" style={{backgroundImage: 'url(./images/footer.png)'}}>
             <div className="footer-container">
                 <p className="footer__title">{t("footer.title")}</p>
                 <div className="footer-box">

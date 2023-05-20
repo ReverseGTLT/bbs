@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -87,6 +91,11 @@ a {
   transition: 0.2s;
   padding: 30px 10px;
 }
+@media (max-width: 991.8px) {
+  .header-bottom__link {
+    padding: 0;
+  }
+}
 .header-bottom__link:hover {
   color: #75DDDA;
   transform: scale(1.1);
@@ -125,6 +134,12 @@ a {
 .header-bottom__language-item:hover {
   color: white;
   transform: scale(1.1);
+}
+
+@media (max-width: 991.8px) {
+  .header-bottom__list-item {
+    padding: 15px 10px;
+  }
 }
 
 .social-images {

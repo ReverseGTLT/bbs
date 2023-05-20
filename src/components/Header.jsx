@@ -56,11 +56,20 @@ export function Header() {
                               onClick={active && onBurgerClick}>
                             <li className="header-bottom__list-item">{t("nav.Directions")}</li>
                         </Link>
-                        <Link className="header-bottom__link"
-                              to={'/contacts'}
-                              onClick={active && onBurgerClick}>
+
+
+                        {/*<Link className="header-bottom__link"*/}
+                        {/*      to={'contscts'}*/}
+                        {/*      onClick={active && onBurgerClick}>*/}
+                        {/*    <li className="header-bottom__list-item">{t("nav.Contacts")}</li>*/}
+                        {/*</Link>*/}
+
+                        <a onClick={active ? onBurgerClick : undefined} className="header-bottom__link" href="#contacts">
                             <li className="header-bottom__list-item">{t("nav.Contacts")}</li>
-                        </Link>
+                        </a>
+
+
+
                         <Link className="header-bottom__link"
                               to={'/become_a_partner'}
                               onClick={active && onBurgerClick}>
