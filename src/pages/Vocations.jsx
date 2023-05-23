@@ -1,6 +1,9 @@
+import Accordeon from "../components/Accordeon";
 
 export function Vocations() {
     return (
-        <div>Vocations</div>
+        <div>
+            <Accordeon/>
+        </div>
     )
 }
