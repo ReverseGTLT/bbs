@@ -6,14 +6,15 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  &-container {
+  &-wrapper {
     width: 100%;
     height: 100%;
     background: rgba(0,178,182,0.7);
-    padding: 100px;
+    padding: 100px 50px;
     color: #00B2B6;
     @include lg {
       padding-block: 30px;
+      padding-inline: 5px;
     }
   }
   &__title {
@@ -70,6 +71,10 @@
       &:hover {
         color: #f8f771;
         transform: scale(1.1);
+        @include md {
+          color: #FFFEA1;
+          transform: scale(1);
+        }
       }
     }
   }
@@ -113,6 +118,11 @@
     padding: 10px;
     &:hover {
       transform: rotateZ(180deg);
+    }
+    @include lg {
+      &:hover {
+        transform: rotateZ(0);
+      }
     }
   }
 }

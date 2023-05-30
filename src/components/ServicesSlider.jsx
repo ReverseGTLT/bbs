@@ -7,39 +7,39 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
-export function HowWork() {
+export function ServicesSlider() {
     const { t } = useTranslation();
-    const [onClicked, setOnClicked] = useState(t("work.r1"));
-    const [isVisible, setIsVisible] = useState(true);
-    const [selectedTag, setSelectedTag] = useState('titleText1');
+    const [onClicked, setOnClicked] = useState("Первый слайд сервиса");
+    const [isVisibles, setIsVisibles] = useState(true);
+    const [selectedTag, setSelectedTag] = useState('ServiceText1');
 
     function pushTextToDescription(e) {
         const selectedId = e.target.id;
-        setIsVisible(false); // Скрываем текущий текст
+        setIsVisibles(false); // Скрываем текущий текст
 
         switch (selectedId) {
-            case 'titleText1':
+            case 'ServiceText1':
                 setTimeout(() => {
-                    setOnClicked(t("work.r1"));
-                    setIsVisible(true); // Показываем новый текст
+                    setOnClicked("Первый слайд сервиса");
+                    setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
-            case 'titleText2':
+            case 'ServiceText2':
                 setTimeout(() => {
-                    setOnClicked(t("work.r2"));
-                    setIsVisible(true); // Показываем новый текст
+                    setOnClicked("Второй слайд сервиса");
+                    setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
-            case 'titleText3':
+            case 'ServiceText3':
                 setTimeout(() => {
-                    setOnClicked(t("work.r3"));
-                    setIsVisible(true); // Показываем новый текст
+                    setOnClicked("Третий слайд сервиса");
+                    setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
-            case 'titleText4':
+            case 'ServiceText4':
                 setTimeout(() => {
-                    setOnClicked(t("work.r4"));
-                    setIsVisible(true); // Показываем новый текст
+                    setOnClicked("Четвертый слайд сервиса");
+                    setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
         }
@@ -47,37 +47,33 @@ export function HowWork() {
     }
 
     return (
-        <section className="work">
-            <Fade down duration={500} delay={500}>
-                <h1 className="work__title">{t("work.title")}</h1>
-            </Fade>
-
+        <div className="work">
             <div className="work-box desctop">
                 <div className="container container--work">
                     <div className="work-titles">
                         <Fade down>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'titleText1' ? 'selected' : ''}`} id="titleText1">{t("work.l1")}
+                                className={`work-titles__text ${selectedTag === 'ServiceText1' ? 'selected' : ''}`} id="ServiceText1">{"first"}
                             </h2>
                         </Fade>
                         <Fade down delay={400}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'titleText2' ? 'selected' : ''}`} id="titleText2">{t("work.l2")}
+                                className={`work-titles__text ${selectedTag === 'ServiceText2' ? 'selected' : ''}`} id="ServiceText2">{"second"}
                             </h2>
                         </Fade>
                         <Fade down delay={800}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'titleText3' ? 'selected' : ''}`} id="titleText3">{t("work.l3")}
+                                className={`work-titles__text ${selectedTag === 'ServiceText3' ? 'selected' : ''}`} id="ServiceText3">{"third"}
                             </h2>
                         </Fade>
                         <Fade down delay={1200}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'titleText4' ? 'selected' : ''}`} id="titleText4">{t("work.l4")}
+                                className={`work-titles__text ${selectedTag === 'ServiceText4' ? 'selected' : ''}`} id="ServiceText4">{'fourth'}
                             </h2>
                         </Fade>
                     </div>
                     <div className="work-descriptions">
-                        <p className={`work-descriptions__text ${isVisible ? 'visible' : ''}`} data-description="titleText1">{onClicked}</p>
+                        <p className={`work-descriptions__text ${isVisibles ? 'visible' : ''}`} data-description="ServiceText1">{onClicked}</p>
                     </div>
                 </div>
 
@@ -96,36 +92,36 @@ export function HowWork() {
                     <SwiperSlide>
                         <Fade left>
                             <div className="slideContainer">
-                                <h2 className="work-titles__text">{t("work.l1")}
+                                <h2 className="work-titles__text">{"first"}
                                 </h2>
-                                <p className="work-descriptions__text">{t("work.r1")}</p>
+                                <p className="work-descriptions__text">{"Первый слайд"}</p>
                             </div>
                         </Fade>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideContainer">
-                            <h2 className="work-titles__text">{t("work.l2")}
+                            <h2 className="work-titles__text">{"second"}
                             </h2>
-                            <p className="work-descriptions__text">{t("work.r2")}</p>
+                            <p className="work-descriptions__text">{"Второй слайд"}</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideContainer">
-                            <h2 className="work-titles__text">{t("work.l3")}
+                            <h2 className="work-titles__text">{"third"}
                             </h2>
-                            <p className="work-descriptions__text">{t("work.r3")}</p>
+                            <p className="work-descriptions__text">{"Третий слайд"}</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideContainer">
-                            <h2 className="work-titles__text">{t("work.l4")}
+                            <h2 className="work-titles__text">{"fourth"}
                             </h2>
-                            <p className="work-descriptions__text">{t("work.r4")}</p>
+                            <p className="work-descriptions__text">{"Четвертый слайд"}</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>
             </div>
 
-        </section>
+        </div>
     )
 }

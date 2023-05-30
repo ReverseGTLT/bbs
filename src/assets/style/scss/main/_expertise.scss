@@ -47,9 +47,17 @@
         height: 2px; /* Высота линии */
         background-color: #1b9f9b; /* Цвет подчеркивания при появлении линии*/
         transition: width 0.5s;  /* Время эффекта */
+        @include md {
+          display: none;
+        }
       }
       &:hover {
         color: #1b9f9b;
+      }
+      @include md {
+        &:hover {
+          color: black;
+        }
       }
     }
   }
@@ -75,4 +83,5 @@
 
 .rotate {
   transform: rotateZ(180deg);
+  opacity: 0.2;
 }

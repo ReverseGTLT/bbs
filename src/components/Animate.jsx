@@ -1,8 +1,8 @@
 
 export function Animate() {
     return (
-        <section className="animate">
-            <img src="./images/animate.jpg" alt="animate"/>
+        <section className="container container--animate animate">
+            <img src="./images/animate.png" alt="animate"/>
         </section>
     )
 }

@@ -8,26 +8,27 @@ export function Footer() {
 
     function onMapClick() {
         setShowMap(!showMap)
-        console.log(showMap)
     }
     return (
         <footer id="contacts" className="footer" style={{backgroundImage: 'url(./images/footer.png)'}}>
-            <div className="footer-container">
-                <p className="footer__title">{t("footer.title")}</p>
-                <div className="footer-box">
-                    <div className="footer-address">
-                        <p className="footer-address__title">{t("footer.find")}</p>
-                        <address className="footer-address__address">{t("footer.address")}</address>
-                        <div onClick={onMapClick} className="footer-address__map">{t("footer.map")}</div>
-                    </div>
-                    <div className="footer-tel">
-                        <a href="tel:+955555755577">
-                            <p className="footer-tel__number">+955 555 7555 77</p>
-                        </a>
-                        <a href="tel:+955555755555">
-                            <p className="footer-tel__number">+955 555 7555 55</p>
-                        </a>
-                        <Social/>
+            <div className="footer-wrapper">
+                <div className="container">
+                    <p className="footer__title">{t("footer.title")}</p>
+                    <div className="footer-box">
+                        <div className="footer-address">
+                            <p className="footer-address__title">{t("footer.find")}</p>
+                            <address className="footer-address__address">{t("footer.address")}</address>
+                            <div onClick={onMapClick} className="footer-address__map">{t("footer.map")}</div>
+                        </div>
+                        <div className="footer-tel">
+                            <a href="tel:+955555755577">
+                                <p className="footer-tel__number">+955 555 7555 77</p>
+                            </a>
+                            <a href="tel:+955555755555">
+                                <p className="footer-tel__number">+955 555 7555 55</p>
+                            </a>
+                            <Social/>
+                        </div>
                     </div>
                 </div>
             </div>

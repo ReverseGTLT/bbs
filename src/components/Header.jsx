@@ -8,9 +8,6 @@ export function Header() {
     const [active, setActive] = useState(false);
     const [openLanguage, setOpenLanguage] = useState(false);
 
-    const langOpen = document.querySelector('.header-bottom__language');
-    const langList = document.querySelector('.header-bottom__language-list');
-
     function onLanguageClick() {
         setOpenLanguage(!openLanguage)
     }
@@ -28,14 +25,19 @@ export function Header() {
     return (
         <header className="header">
             <div className="header-top">
-                <Link to="/">
+                <div className="container container--header-top">
+                    <Link className="header-top__link" to="/">
+                        <div className="header-top__logo">
+                            <img src="./images/logo.svg" alt="logo"/>
+                        </div>
+                    </Link>
                     <div className="header-top__title">{t("title")}</div>
-                </Link>
-                <div className="header-top__social">
-                    <Social/>
+                    <div className="header-top__social">
+                        <Social/>
+                    </div>
                 </div>
             </div>
-            <div className="header-bottom">
+            <div className="container header-bottom">
                 <div className={`burger ${active ? 'block' : ''}`} onClick={onBurgerClick}>
                     <span className={`${active ? 'active' : ''}`}></span>
                 </div>
@@ -56,13 +58,6 @@ export function Header() {
                               onClick={active && onBurgerClick}>
                             <li className="header-bottom__list-item">{t("nav.Directions")}</li>
                         </Link>
-
-
-                        {/*<Link className="header-bottom__link"*/}
-                        {/*      to={'contscts'}*/}
-                        {/*      onClick={active && onBurgerClick}>*/}
-                        {/*    <li className="header-bottom__list-item">{t("nav.Contacts")}</li>*/}
-                        {/*</Link>*/}
 
                         <a onClick={active ? onBurgerClick : undefined} className="header-bottom__link" href="#contacts">
                             <li className="header-bottom__list-item">{t("nav.Contacts")}</li>

@@ -1,6 +1,13 @@
 
 @use "../presets" as *;
 
+.container--work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
 .work {
   &__title {
     font-weight: 700;
@@ -14,10 +21,7 @@
   }
   &-box {
     background-color: #70D4D6;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
   }
   &-titles {
     flex-grow: 3;
@@ -53,8 +57,8 @@
     }
   }
   &-descriptions {
-    flex-grow: 4;
     padding-left: 40px;
+    flex: 4 0 0;
     &__text {
       font-size: 20px;
       line-height: 32px;

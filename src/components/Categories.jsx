@@ -5,7 +5,7 @@ export function Categories () {
 
     const { t } = useTranslation();
     return (
-        <section className="categories">
+        <section className="container categories">
             <div className="categories-box">
                 <CategoriesItem
                     id={"categoriesItemInfo1"}

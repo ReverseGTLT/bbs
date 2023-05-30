@@ -48,7 +48,7 @@ const AccordionItem = ({ title, content, index, activeIndex, handleClick }) => {
 
     return (
         <div>
-            <div className={`accordion-item ${isActive ? 'active' : ''}`} onClick={() => handleClick(index)}>
+            <div className={`accordion-item ${isActive ? 'active accordion-grey' : ''}`} onClick={isActive ? () => handleClick(null) : () => handleClick(index)}>
                 <div className="accordion-title">{title}</div>
                 <div className={`accordion-img`}>
                     <img className={`${isActive ? 'rotate' : ''}`} src="./images/arrow.png" alt=""/>

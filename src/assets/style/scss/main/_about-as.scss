@@ -1,6 +1,18 @@
 
 @use "../presets" as *;
 
+.container--work-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  @include lg {
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 20px;
+  }
+}
+
 .about {
   padding-bottom: 60px;
   &-team {
@@ -33,16 +45,6 @@
 
 .work {
   &-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 150px;
-    padding-block: 20px;
-    @include lg {
-      flex-direction: column;
-      padding-inline: 20px;
-      gap: 20px;
-    }
     &__info {
       max-width: 450px;
       &-title {

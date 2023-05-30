@@ -2,11 +2,25 @@
 @use "../presets" as *;
 
 .accordion {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   &-item {
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.2s;
+    &:hover {
+      background-color: #f3f3f3;
+    }
+  }
+  &-title {
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: #1b9f9b;
+    }
   }
   &-img {
     border-radius: 50%;
@@ -15,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     img {
       width: 100%;
       transition: 0.2s;
@@ -31,10 +46,6 @@
   }
 }
 
-.rotate {
-  transform: rotateZ(180deg);
-}
-
 @keyframes open {
   from {
     font-size: 0;
@@ -42,4 +53,8 @@
   to {
     font-size: 16px;
   }
+}
+
+.accordion-grey {
+  background-color: #e8e8e8;
 }
