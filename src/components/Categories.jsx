@@ -13,6 +13,7 @@ export function Categories () {
                     title={t("categories.coffee.title")}
                     descriptions={t("categories.coffee.description")}
                     btn={t("categories.btn")}
+                    link={"coffee"}
                 />
                 <CategoriesItem
                     id={"categoriesItemInfo2"}
@@ -20,6 +21,7 @@ export function Categories () {
                     title={t("categories.confectionery.title")}
                     descriptions={t("categories.confectionery.description")}
                     btn={t("categories.btn")}
+                    link={"confectionery"}
                 />
                 <CategoriesItem
                     id={"categoriesItemInfo3"}
@@ -27,6 +29,7 @@ export function Categories () {
                     title={t("categories.toppers.title")}
                     descriptions={t("categories.toppers.description")}
                     btn={t("categories.btn")}
+                    link={"topper"}
                 />
                 <CategoriesItem
                     id={"categoriesItemInfo4"}
@@ -34,6 +37,7 @@ export function Categories () {
                     title={t("categories.chemicals.title")}
                     descriptions={t("categories.chemicals.description")}
                     btn={t("categories.btn")}
+                    link={"chemical"}
                 />
             </div>
         </section>

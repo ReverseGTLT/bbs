@@ -1,6 +1,7 @@
 import Fade from 'react-reveal/Fade';
 import Pulse from "react-reveal";
-export function CategoriesItem( {image, title, btn, descriptions, id} ) {
+import {Link} from "react-router-dom";
+export function CategoriesItem( {image, title, btn, descriptions, id, link} ) {
     return (
         <div className="categories-item">
             <Fade left >
@@ -13,7 +14,9 @@ export function CategoriesItem( {image, title, btn, descriptions, id} ) {
                     <h3 className="categories-item__title">{title}</h3>
                     <div className="categories-item__box"  id={id}>
                         <p className="categories-item__descriptions">{descriptions}</p>
-                        <button className="categories-item__btn">{btn}</button>
+                        <Link to={link}>
+                            <button className="categories-item__btn">{btn}</button>
+                        </Link>
                     </div>
                 </div>
             </Pulse>

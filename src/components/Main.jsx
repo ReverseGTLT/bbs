@@ -5,6 +5,7 @@ import {BecomeAPartner} from "../pages/BecomeAPartner";
 import {Vocations} from "../pages/Vocations";
 import {AboutAs} from "../pages/AboutAs";
 import {Home} from "../pages/Home";
+import {Coffee} from "../pages/Coffee";
 
 export function Main() {
     return (
@@ -16,6 +17,7 @@ export function Main() {
                 <Route exact path="/become_a_partner" element={<BecomeAPartner/>}/>
                 <Route exact path="/vocation" element={<Vocations/>}/>
                 <Route exact path="/about_us" element={<AboutAs/>}/>
+                <Route exact path="/coffee" element={<Coffee/>}/>
             </Routes>
         </aside>
     )
