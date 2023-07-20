@@ -21,7 +21,7 @@ export function Categories () {
                     title={t("categories.confectionery.title")}
                     descriptions={t("categories.confectionery.description")}
                     btn={t("categories.btn")}
-                    link={"confectionery"}
+                    link={"confectionary"}
                 />
                 <CategoriesItem
                     id={"categoriesItemInfo3"}

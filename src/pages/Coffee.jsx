@@ -7,10 +7,11 @@ export function Coffee( { } ) {
             <h4 className="work__title">Coffee</h4>
             <div className="container coffee-image">
                 <img className="coffee-image__picture" src="./images/coffee/coffee-main.png" alt="coffee main"/>
+                <div className="coffee-link">
+                    <a className="coffee-link__all" href="#">СМОТРЕТЬ ВСЕ</a>
+                </div>
             </div>
-            <div className="coffee-link">
-                <a className="coffee-link__all" href="#">СМОТРЕТЬ ВСЕ</a>
-            </div>
+
             <div className="container coffee-items">
                 <CoffeeItem
                     title={"Получите все и сразу"}

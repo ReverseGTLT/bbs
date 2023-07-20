@@ -6,6 +6,7 @@ import {Vocations} from "../pages/Vocations";
 import {AboutAs} from "../pages/AboutAs";
 import {Home} from "../pages/Home";
 import {Coffee} from "../pages/Coffee";
+import {Confectionary} from "../pages/Confectionary";
 
 export function Main() {
     return (
@@ -18,6 +19,7 @@ export function Main() {
                 <Route exact path="/vocation" element={<Vocations/>}/>
                 <Route exact path="/about_us" element={<AboutAs/>}/>
                 <Route exact path="/coffee" element={<Coffee/>}/>
+                <Route exact path="/confectionary" element={<Confectionary/>}/>
             </Routes>
         </aside>
     )

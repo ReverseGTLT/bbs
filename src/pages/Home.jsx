@@ -11,11 +11,11 @@ export function Home() {
         <div>
             <Animate/>
             <Expertise/>
-            <HowWork/>
+            {/*<HowWork/>*/}
             <Categories/>
-            <Services/>
-            <Advantage/>
-            <Sertification/>
+            {/*<Services/>*/}
+            {/*<Advantage/>*/}
+            {/*<Sertification/>*/}
         </div>
     )
 }
