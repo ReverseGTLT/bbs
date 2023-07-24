@@ -36,12 +36,6 @@ export function ServicesSlider() {
                     setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
-            case 'ServiceText4':
-                setTimeout(() => {
-                    setOnClicked("Четвертый слайд сервиса");
-                    setIsVisibles(true); // Показываем новый текст
-                }, 200);
-                break;
         }
         setSelectedTag(selectedId);
     }
@@ -53,22 +47,17 @@ export function ServicesSlider() {
                     <div className="work-titles">
                         <Fade down>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText1' ? 'selected' : ''}`} id="ServiceText1">{"first"}
+                                className={`work-titles__text ${selectedTag === 'ServiceText1' ? 'selected' : ''}`} id="ServiceText1">{"Мытье окон и витрин"}
                             </h2>
                         </Fade>
                         <Fade down delay={400}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText2' ? 'selected' : ''}`} id="ServiceText2">{"second"}
+                                className={`work-titles__text ${selectedTag === 'ServiceText2' ? 'selected' : ''}`} id="ServiceText2">{"Клининг"}
                             </h2>
                         </Fade>
                         <Fade down delay={800}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText3' ? 'selected' : ''}`} id="ServiceText3">{"third"}
-                            </h2>
-                        </Fade>
-                        <Fade down delay={1200}>
-                            <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText4' ? 'selected' : ''}`} id="ServiceText4">{'fourth'}
+                                className={`work-titles__text ${selectedTag === 'ServiceText3' ? 'selected' : ''}`} id="ServiceText3">{"Тренинги"}
                             </h2>
                         </Fade>
                     </div>
@@ -110,13 +99,6 @@ export function ServicesSlider() {
                             <h2 className="work-titles__text">{"third"}
                             </h2>
                             <p className="work-descriptions__text">{"Третий слайд"}</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slideContainer">
-                            <h2 className="work-titles__text">{"fourth"}
-                            </h2>
-                            <p className="work-descriptions__text">{"Четвертый слайд"}</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

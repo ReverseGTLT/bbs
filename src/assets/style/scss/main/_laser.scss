@@ -1,0 +1,41 @@
+
+@use "../presets" as *;
+
+.laser {
+  &__image {
+    margin-inline: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &-items{
+    &__wrapper {
+      padding-block: 50px;
+    }
+  }
+}
+
+.steps {
+  padding-block: 50px;
+  max-width: 650px;
+  margin-inline: auto;
+  &-title {
+    border-radius: 40px;
+    background: #4D6F9B;
+    &__text {
+      color: #FFF;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.684px;
+    }
+  }
+  &-image {
+    margin-inline: auto;
+    padding-block: 50px;
+    img {
+      width: 100%;
+    }
+  }
+}

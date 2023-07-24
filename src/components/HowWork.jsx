@@ -42,6 +42,18 @@ export function HowWork() {
                     setIsVisible(true); // Показываем новый текст
                 }, 200);
                 break;
+            case 'titleText5':
+                setTimeout(() => {
+                    setOnClicked(t("work.r5"));
+                    setIsVisible(true); // Показываем новый текст
+                }, 200);
+                break;
+            case 'titleText6':
+                setTimeout(() => {
+                    setOnClicked(t("work.r6"));
+                    setIsVisible(true); // Показываем новый текст
+                }, 200);
+                break;
         }
         setSelectedTag(selectedId);
     }
@@ -73,6 +85,16 @@ export function HowWork() {
                         <Fade down delay={1200}>
                             <h2 onClick={pushTextToDescription}
                                 className={`work-titles__text ${selectedTag === 'titleText4' ? 'selected' : ''}`} id="titleText4">{t("work.l4")}
+                            </h2>
+                        </Fade>
+                        <Fade down delay={1200}>
+                            <h2 onClick={pushTextToDescription}
+                                className={`work-titles__text ${selectedTag === 'titleText5' ? 'selected' : ''}`} id="titleText5">{t("work.l5")}
+                            </h2>
+                        </Fade>
+                        <Fade down delay={1200}>
+                            <h2 onClick={pushTextToDescription}
+                                className={`work-titles__text ${selectedTag === 'titleText6' ? 'selected' : ''}`} id="titleText6">{t("work.l6")}
                             </h2>
                         </Fade>
                     </div>
@@ -121,6 +143,20 @@ export function HowWork() {
                             <h2 className="work-titles__text">{t("work.l4")}
                             </h2>
                             <p className="work-descriptions__text">{t("work.r4")}</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slideContainer">
+                            <h2 className="work-titles__text">{t("work.l5")}
+                            </h2>
+                            <p className="work-descriptions__text">{t("work.r5")}</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slideContainer">
+                            <h2 className="work-titles__text">{t("work.l6")}
+                            </h2>
+                            <p className="work-descriptions__text">{t("work.r6")}</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

@@ -4,6 +4,14 @@ import {ServicesSlider} from "./ServicesSlider";
 export function Services() {
     return (
         <section className="services">
+            <div className="attendance">
+                <div className="services-title">
+                    <div className="container">
+                        <h5 className="work__title">Услуги</h5>
+                    </div>
+                </div>
+                <ServicesSlider/>
+            </div>
             <div className="complex">
                 <div className="services-title">
                     <div className="container">
@@ -38,14 +46,6 @@ export function Services() {
                         />
                     </div>
                 </div>
-            </div>
-            <div className="attendance">
-                <div className="services-title">
-                    <div className="container">
-                        <h5 className="work__title">Услуги</h5>
-                    </div>
-                </div>
-                <ServicesSlider/>
             </div>
         </section>
     )

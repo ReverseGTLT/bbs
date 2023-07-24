@@ -29,7 +29,7 @@ export function Categories () {
                     title={t("categories.toppers.title")}
                     descriptions={t("categories.toppers.description")}
                     btn={t("categories.btn")}
-                    link={"topper"}
+                    link={"laser"}
                 />
                 <CategoriesItem
                     id={"categoriesItemInfo4"}

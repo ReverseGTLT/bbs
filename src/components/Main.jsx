@@ -7,6 +7,8 @@ import {AboutAs} from "../pages/AboutAs";
 import {Home} from "../pages/Home";
 import {Coffee} from "../pages/Coffee";
 import {Confectionary} from "../pages/Confectionary";
+import {Laser} from "./Laser";
+import {Chemical} from "../pages/Chemical";
 
 export function Main() {
     return (
@@ -20,6 +22,8 @@ export function Main() {
                 <Route exact path="/about_us" element={<AboutAs/>}/>
                 <Route exact path="/coffee" element={<Coffee/>}/>
                 <Route exact path="/confectionary" element={<Confectionary/>}/>
+                <Route exact path="/laser" element={<Laser/>}/>
+                <Route exact path="/chemical" element={<Chemical/>}/>
             </Routes>
         </aside>
     )
