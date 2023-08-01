@@ -11,7 +11,7 @@ export function AboutAs() {
                     <h4 className="about-team__title">{t("about.title")}</h4>
                 </Fade>
                 <div className="about-team__image">
-                    <img src="./images/about/team.png" alt="team" className="about-team__image-picture"/>
+                    <img src="./images/about/team.svg" alt="team" className="about-team__image-picture"/>
                 </div>
             </div>
             <div className="about-work">

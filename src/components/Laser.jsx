@@ -17,27 +17,27 @@ export function Laser() {
                     description={t("laser.item-description1")}
                 />
                 <CoffeeItem
-                    title={t("work.l1")}
+                    title={t("work.l2")}
                     src={"./images/laser/002.svg"}
                     description={t("laser.item-description2")}
                 />
                 <CoffeeItem
-                    title={t("work.l1")}
+                    title={t("work.l3")}
                     src={"./images/laser/003.svg"}
                     description={t("laser.item-description3")}
                 />
                 <CoffeeItem
-                    title={t("work.l1")}
+                    title={t("work.l4")}
                     src={"./images/laser/004.svg"}
                     description={t("laser.item-description4")}
                 />
                 <CoffeeItem
-                    title={t("work.l1")}
+                    title={t("work.l5")}
                     src={"./images/laser/005.svg"}
                     description={t("laser.item-description5")}
                 />
                 <CoffeeItem
-                    title={t("work.l1")}
+                    title={t("work.l6")}
                     src={"./images/laser/006.svg"}
                     description={t("laser.item-description6")}
                 />

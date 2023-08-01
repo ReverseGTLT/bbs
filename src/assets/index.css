@@ -388,8 +388,8 @@ a {
 }
 
 .bbs {
-  background-color: #75DDDA;
   padding: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 }
 .bbs-info {
   display: flex;
@@ -398,13 +398,15 @@ a {
 }
 .bbs-info__left {
   flex-grow: 1;
-  color: white;
+  color: black;
+  opacity: 0.9;
   font-size: 160px;
   font-weight: bold;
 }
 .bbs-info__right {
   flex-grow: 1.2;
-  color: white;
+  color: black;
+  opacity: 0.9;
   font-weight: bold;
   text-align: center;
 }
