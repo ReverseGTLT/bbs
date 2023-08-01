@@ -1,13 +1,15 @@
 import {ServicesItem} from "./ServicesItem";
 import {ServicesSlider} from "./ServicesSlider";
+import {useTranslation} from "react-i18next";
 
 export function Services() {
+    const { t } = useTranslation();
     return (
         <section className="services">
             <div className="attendance">
                 <div className="services-title">
                     <div className="container">
-                        <h5 className="work__title">Услуги</h5>
+                        <h5 className="work__title">{t("chemical.title1")}</h5>
                     </div>
                 </div>
                 <ServicesSlider/>
@@ -15,34 +17,34 @@ export function Services() {
             <div className="complex">
                 <div className="services-title">
                     <div className="container">
-                        <h5 className="work__title">Комплексный сервис</h5>
+                        <h5 className="work__title">{t("chemical.title2")}</h5>
                     </div>
                 </div>
                 <div className="container">
                     <div className="services-box">
                         <ServicesItem
                             src={"./images/services1.svg"}
-                            description={"blablabla1"}
+                            description={t("chemical.service-description1")}
                         />
 
                         <ServicesItem
                             src={"./images/services2.svg"}
-                            description={"blablabla2"}
+                            description={t("chemical.service-description2")}
                         />
 
                         <ServicesItem
                             src={"./images/services3.svg"}
-                            description={"blablabla3"}
+                            description={t("chemical.service-description3")}
                         />
 
                         <ServicesItem
                             src={"./images/services4.svg"}
-                            description={"blablabla4"}
+                            description={t("chemical.service-description4")}
                         />
 
                         <ServicesItem
                             src={"./images/services5.svg"}
-                            description={"blablabla5"}
+                            description={t("chemical.service-description5")}
                         />
                     </div>
                 </div>

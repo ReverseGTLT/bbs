@@ -48,28 +48,24 @@ export function Header() {
                               onClick={active && onBurgerClick}>
                             <li className="header-bottom__list-item">{t("nav.Home")}</li>
                         </Link>
-                        <Link className="header-bottom__link"
-                              to={'/solutions'}
-                              onClick={active && onBurgerClick}>
-                            <li className="header-bottom__list-item">{t("nav.Solutions")}</li>
-                        </Link>
-                        <Link className="header-bottom__link"
-                              to={'/directions'}
-                              onClick={active && onBurgerClick}>
-                            <li className="header-bottom__list-item">{t("nav.Directions")}</li>
-                        </Link>
-
-                        <a onClick={active ? onBurgerClick : undefined} className="header-bottom__link" href="#contacts">
-                            <li className="header-bottom__list-item">{t("nav.Contacts")}</li>
-                        </a>
-
-
-
-                        <Link className="header-bottom__link"
-                              to={'/become_a_partner'}
-                              onClick={active && onBurgerClick}>
-                            <li className="header-bottom__list-item">{t("nav.BecomeAPartner")}</li>
-                        </Link>
+                        {/*<Link className="header-bottom__link"*/}
+                        {/*      to={'/solutions'}*/}
+                        {/*      onClick={active && onBurgerClick}>*/}
+                        {/*    <li className="header-bottom__list-item">{t("nav.Solutions")}</li>*/}
+                        {/*</Link>*/}
+                        {/*<Link className="header-bottom__link"*/}
+                        {/*      to={'/directions'}*/}
+                        {/*      onClick={active && onBurgerClick}>*/}
+                        {/*    <li className="header-bottom__list-item">{t("nav.Directions")}</li>*/}
+                        {/*</Link>*/}
+                        {/*<a onClick={active ? onBurgerClick : undefined} className="header-bottom__link" href="#contacts">*/}
+                        {/*    <li className="header-bottom__list-item">{t("nav.Contacts")}</li>*/}
+                        {/*</a>*/}
+                        {/*<Link className="header-bottom__link"*/}
+                        {/*      to={'/become_a_partner'}*/}
+                        {/*      onClick={active && onBurgerClick}>*/}
+                        {/*    <li className="header-bottom__list-item">{t("nav.BecomeAPartner")}</li>*/}
+                        {/*</Link>*/}
                         <Link className="header-bottom__link"
                               to={'/vocation'}
                               onClick={active && onBurgerClick}>

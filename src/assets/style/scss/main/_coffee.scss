@@ -40,6 +40,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      justify-content: space-around;
       @include lg {
         flex-direction: column;
       }
@@ -48,6 +49,12 @@
       flex-direction: row-reverse;
       @include lg {
         flex-direction: column;
+      }
+    }
+    &__img {
+      img {
+        display: block;
+        margin-inline: auto;
       }
     }
     img {

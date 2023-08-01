@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-block: 60px;
+    align-items: baseline;
+    column-gap: 20px;
     row-gap: 60px;
     @include lg {
       grid-template-columns: repeat(2, 1fr);

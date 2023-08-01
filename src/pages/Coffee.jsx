@@ -1,36 +1,39 @@
 import {CoffeeItem} from "../components/CoffeeItem";
+import Fade from "react-reveal/Fade";
+import {useTranslation} from "react-i18next";
 
 
 export function Coffee( { } ) {
+    const { t } = useTranslation();
     return (
         <section className="coffee">
-            <h4 className="work__title">Coffee</h4>
+            <Fade right>
+                <h4 className="work__title">{t("coffee.work-title")}</h4>
+            </Fade>
             <div className="container coffee-image">
                 <img className="coffee-image__picture" src="./images/coffee/coffee-main.png" alt="coffee main"/>
                 <div className="coffee-link">
-                    <a className="coffee-link__all" href="#">СМОТРЕТЬ ВСЕ</a>
+                    <a className="coffee-link__all" href="#">{t("coffee.coffee-link__all")}</a>
                 </div>
             </div>
 
             <div className="container coffee-items">
                 <CoffeeItem
-                    title={"Получите все и сразу"}
+                    title={t("coffee.item-title1")}
                     src={"./images/coffee/1.png"}
-                    description={"Вам не нужно заключать договоры с множеством подрядчиков и выбирать, с кем выгоднее сотрудничать.\n" +
-                        "\n" +
-                        "Мы всё уже сделали — создали платформу с низкими ценами, быстрой доставкой и выгодным банковским обслуживанием"}
+                    description={t("coffee.item-description1")}
                 />
 
                 <CoffeeItem
-                    title={"Автоматизируйте управление кофейней"}
+                    title={t("coffee.item-title2")}
                     src={"./images/coffee/2.png"}
-                    description={"Полный комплекс программных решений для вашего бизнеса: ведите складской учет, установите бонусную программу, подключитесь к мобильному приложению для клиентов, следите за аналитикой продаж, составляйте меню с фото и модификаторами и многое другое."}
+                    description={t("coffee.item-description2")}
                 />
 
                 <CoffeeItem
-                    title={"Экономия на оптовых закупках"}
+                    title={t("coffee.item-title3")}
                     src={"./images/coffee/3.png"}
-                    description={"Мы не зарабатываем на кофе, поэтому не делаем рыночной наценки на продукции маркетплейса. У нас вы можете купить зерно и сопутствующие товары с выгодой до 40%."}
+                    description={t("coffee.item-description3")}
                 />
             </div>
             <div className="container coffee-bg">
@@ -38,31 +41,33 @@ export function Coffee( { } ) {
             </div>
             <div className="coffee-goods">
                 <div className="container">
-                    <h5 className="work-item__info-title">Товары и услуги</h5>
+                    <Fade right>
+                        <h5 className="work-item__info-title">{t("coffee.work-item__info-title")}</h5>
+                    </Fade>
                     <div className="coffee-goods__wrapper">
                         <div className="coffee-goods__item">
                             <img src="./images/coffee/goods1.svg" alt="goods1"/>
-                            <p>Бесплатное обучение</p>
+                            <p>{t("coffee.goods-item1")}</p>
                         </div>
 
                         <div className="coffee-goods__item">
                             <img src="./images/coffee/goods2.svg" alt="goods2"/>
-                            <p>Техническое обслуживание</p>
+                            <p>{t("coffee.goods-item2")}</p>
                         </div>
 
                         <div className="coffee-goods__item">
                             <img src="./images/coffee/goods3.svg" alt="goods3"/>
-                            <p>Сопровождение проектов</p>
+                            <p>{t("coffee.goods-item3")}</p>
                         </div>
 
                         <div className="coffee-goods__item">
                             <img src="./images/coffee/goods4.svg" alt="goods4"/>
-                            <p>Аренда и продажа оборудования и кофейных аксессуаров</p>
+                            <p>{t("coffee.goods-item4")}</p>
                         </div>
 
                         <div className="coffee-goods__item">
                             <img src="./images/coffee/goods5.svg" alt="goods5"/>
-                            <p>Уникальный кофе под заказ</p>
+                            <p>{t("coffee.goods-item5")}</p>
                         </div>
                     </div>
                 </div>

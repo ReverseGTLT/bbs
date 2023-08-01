@@ -9,7 +9,7 @@ import { Pagination } from "swiper";
 
 export function ServicesSlider() {
     const { t } = useTranslation();
-    const [onClicked, setOnClicked] = useState("Первый слайд сервиса");
+    const [onClicked, setOnClicked] = useState(t("chemical.r1"));
     const [isVisibles, setIsVisibles] = useState(true);
     const [selectedTag, setSelectedTag] = useState('ServiceText1');
 
@@ -20,19 +20,19 @@ export function ServicesSlider() {
         switch (selectedId) {
             case 'ServiceText1':
                 setTimeout(() => {
-                    setOnClicked("Первый слайд сервиса");
+                    setOnClicked(t("chemical.r1"));
                     setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
             case 'ServiceText2':
                 setTimeout(() => {
-                    setOnClicked("Второй слайд сервиса");
+                    setOnClicked(t("chemical.r2"));
                     setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
             case 'ServiceText3':
                 setTimeout(() => {
-                    setOnClicked("Третий слайд сервиса");
+                    setOnClicked(t("chemical.r3"));
                     setIsVisibles(true); // Показываем новый текст
                 }, 200);
                 break;
@@ -44,20 +44,20 @@ export function ServicesSlider() {
         <div className="work">
             <div className="work-box desctop">
                 <div className="container container--work">
-                    <div className="work-titles">
+                    <div className="work-titles work-titles--chemical">
                         <Fade down>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText1' ? 'selected' : ''}`} id="ServiceText1">{"Мытье окон и витрин"}
+                                className={`work-titles__text ${selectedTag === 'ServiceText1' ? 'selected' : ''}`} id="ServiceText1">{t("chemical.l1")}
                             </h2>
                         </Fade>
                         <Fade down delay={400}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText2' ? 'selected' : ''}`} id="ServiceText2">{"Клининг"}
+                                className={`work-titles__text ${selectedTag === 'ServiceText2' ? 'selected' : ''}`} id="ServiceText2">{t("chemical.l2")}
                             </h2>
                         </Fade>
                         <Fade down delay={800}>
                             <h2 onClick={pushTextToDescription}
-                                className={`work-titles__text ${selectedTag === 'ServiceText3' ? 'selected' : ''}`} id="ServiceText3">{"Тренинги"}
+                                className={`work-titles__text ${selectedTag === 'ServiceText3' ? 'selected' : ''}`} id="ServiceText3">{t("chemical.l3")}
                             </h2>
                         </Fade>
                     </div>
@@ -81,24 +81,24 @@ export function ServicesSlider() {
                     <SwiperSlide>
                         <Fade left>
                             <div className="slideContainer">
-                                <h2 className="work-titles__text">{"first"}
+                                <h2 className="work-titles__text">{t("chemical.l1")}
                                 </h2>
-                                <p className="work-descriptions__text">{"Первый слайд"}</p>
+                                <p className="work-descriptions__text">{t("chemical.r1")}</p>
                             </div>
                         </Fade>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideContainer">
-                            <h2 className="work-titles__text">{"second"}
+                            <h2 className="work-titles__text">{t("chemical.l2")}
                             </h2>
-                            <p className="work-descriptions__text">{"Второй слайд"}</p>
+                            <p className="work-descriptions__text">{t("chemical.r2")}</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideContainer">
-                            <h2 className="work-titles__text">{"third"}
+                            <h2 className="work-titles__text">{t("chemical.l3")}
                             </h2>
-                            <p className="work-descriptions__text">{"Третий слайд"}</p>
+                            <p className="work-descriptions__text">{t("chemical.r3")}</p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

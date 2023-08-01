@@ -12,46 +12,69 @@ export function Laser() {
             <HowWork/>
             <div className="laser-items__wrapper">
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/001.svg"}
-                    description={""}
+                    description={t("laser.item-description1")}
                 />
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/002.svg"}
-                    description={""}
+                    description={t("laser.item-description2")}
                 />
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/003.svg"}
-                    description={""}
+                    description={t("laser.item-description3")}
                 />
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/004.svg"}
-                    description={""}
+                    description={t("laser.item-description4")}
                 />
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/005.svg"}
-                    description={""}
+                    description={t("laser.item-description5")}
                 />
                 <CoffeeItem
-                    title={""}
+                    title={t("work.l1")}
                     src={"./images/laser/006.svg"}
-                    description={""}
+                    description={t("laser.item-description6")}
                 />
             </div>
             <div className="coffee-link">
-                <a className="coffee-link__all" href="#">СМОТРЕТЬ ВСЕ</a>
+                <a className="coffee-link__all" href="#">{t("coffee.coffee-link__all")}</a>
             </div>
             <div className="steps">
                 <div className="steps-title">
-                    <p className="steps-title__text">Путь клиента/этапы работы</p>
+                    <p className="steps-title__text">{t("laser.steps-title")}</p>
                 </div>
             </div>
             <div className="steps-image">
-                <img src={t("steps.url")} alt={t("steps.url")}/>
+                <div className="steps-item">
+                    <div className="steps-item__image">
+                        <img src="./images/laser/i1.svg" alt="image1"/>
+                    </div>
+                    <p className="steps-item__description">{t("laser.image-description1")}</p>
+                </div>
+                <div className="steps-item">
+                    <div className="steps-item__image">
+                        <img src="./images/laser/i2.svg" alt="image2"/>
+                    </div>
+                    <p className="steps-item__description steps-item__description--second">{t("laser.image-description2")}</p>
+                </div>
+                <div className="steps-item">
+                    <div className="steps-item__image">
+                        <img src="./images/laser/i3.svg" alt="image3"/>
+                    </div>
+                    <p className="steps-item__description steps-item__description-third">{t("laser.image-description3")}</p>
+                </div>
+                <div className="steps-item">
+                    <div className="steps-item__image">
+                        <img src="./images/laser/i4.svg" alt="image4"/>
+                    </div>
+                    <p className="steps-item__description steps-item__description-fourth">{t("laser.image-description4")}</p>
+                </div>
             </div>
         </section>
     )

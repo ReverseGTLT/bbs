@@ -164,11 +164,15 @@
       flex-direction: column;
     }
     &__item {
+      flex-basis: 25%;
       display: flex;
       flex-direction: column;
       padding: 20px 35px 30px 35px;
       background-color: #fff;
       border-radius: 40px;
+      @include lg {
+        flex-basis: 40%;
+      }
       &-description {
         padding-bottom: 30px;
         color: #000;
@@ -179,7 +183,14 @@
         letter-spacing: -0.38px;
       }
       &-image {
+        cursor: pointer;
         margin-inline: auto;
+        margin-top: auto;
+        max-width: 188px;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
         img {
           width: 100%;
         }

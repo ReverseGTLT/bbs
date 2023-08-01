@@ -1,48 +1,50 @@
 import {AdvantageItem} from "./AdvantageItem";
+import {useTranslation} from "react-i18next";
 
 export function Advantage() {
+    const { t } = useTranslation();
     return (
         <section className="advantage">
             <div className="services-title">
                 <div className="container">
-                    <h5 className="work__title">Преимущества</h5>
+                    <h5 className="work__title">{t("chemical.advantage-title")}</h5>
                 </div>
             </div>
             <div className="advantage-box container">
                 <AdvantageItem
                     src={"./images/ada1.svg"}
-                    title={"Title1"}
-                    description={"description1"}
+                    title={t("chemical.item-title1")}
+                    description={t("chemical.item-description1")}
                 />
 
                 <AdvantageItem
                     src={"./images/ada2.svg"}
-                    title={"Title2"}
-                    description={"description2"}
+                    title={t("chemical.item-title2")}
+                    description={t("chemical.item-description2")}
                 />
 
                 <AdvantageItem
                     src={"./images/ada3.svg"}
-                    title={"Title3"}
-                    description={"description3"}
+                    title={t("chemical.item-title3")}
+                    description={t("chemical.item-description3")}
                 />
 
                 <AdvantageItem
                     src={"./images/ada4.svg"}
-                    title={"Title4"}
-                    description={"description4"}
+                    title={t("chemical.item-title4")}
+                    description={t("chemical.item-description4")}
                 />
 
                 <AdvantageItem
                     src={"./images/ada5.svg"}
-                    title={"Title5"}
-                    description={"description5"}
+                    title={t("chemical.item-title5")}
+                    description={t("chemical.item-description5")}
                 />
 
                 <AdvantageItem
                     src={"./images/ada6.svg"}
-                    title={"Title6"}
-                    description={"description6"}
+                    title={t("chemical.item-title6")}
+                    description={t("chemical.item-description6")}
                 />
             </div>
         </section>

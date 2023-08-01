@@ -1,0 +1,28 @@
+
+@use "../presets" as *;
+
+.bbs {
+  background-color: #75DDDA;
+  padding: 50px;
+  &-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    &__left {
+      flex-grow: 1;
+      color: white;
+      font-size: 160px;
+      font-weight: bold;
+    }
+    &__right {
+      flex-grow: 1.2;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      &-top {
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
