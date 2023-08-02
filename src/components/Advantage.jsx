@@ -1,5 +1,6 @@
 import {AdvantageItem} from "./AdvantageItem";
 import {useTranslation} from "react-i18next";
+import Fade from "react-reveal/Fade";
 
 export function Advantage() {
     const { t } = useTranslation();
@@ -7,7 +8,9 @@ export function Advantage() {
         <section className="advantage">
             <div className="services-title">
                 <div className="container">
-                    <h5 className="work__title">{t("chemical.advantage-title")}</h5>
+                    <Fade left>
+                        <h5 className="work__title">{t("chemical.advantage-title")}</h5>
+                    </Fade>
                 </div>
             </div>
             <div className="advantage-box container">

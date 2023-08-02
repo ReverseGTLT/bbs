@@ -1,11 +1,14 @@
 import {useTranslation} from "react-i18next";
+import Fade from "react-reveal/Fade";
 export function Sertification() {
     const { t } = useTranslation();
     return (
         <section className="sertification">
             <div className="services-title">
                 <div className="container">
-                    <h5 className="work__title">{t("chemical.sertification-title")}</h5>
+                    <Fade left>
+                        <h5 className="work__title">{t("chemical.sertification-title")}</h5>
+                    </Fade>
                 </div>
             </div>
             <div className="sertification-wrapper">

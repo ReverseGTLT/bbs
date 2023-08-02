@@ -1,6 +1,7 @@
 import {ServicesItem} from "./ServicesItem";
 import {ServicesSlider} from "./ServicesSlider";
 import {useTranslation} from "react-i18next";
+import Fade from "react-reveal/Fade";
 
 export function Services() {
     const { t } = useTranslation();
@@ -9,7 +10,9 @@ export function Services() {
             <div className="attendance">
                 <div className="services-title">
                     <div className="container">
-                        <h5 className="work__title">{t("chemical.title1")}</h5>
+                       <Fade left>
+                           <h5 className="work__title">{t("chemical.title1")}</h5>
+                       </Fade>
                     </div>
                 </div>
                 <ServicesSlider/>
@@ -17,7 +20,9 @@ export function Services() {
             <div className="complex">
                 <div className="services-title">
                     <div className="container">
-                        <h5 className="work__title">{t("chemical.title2")}</h5>
+                        <Fade left>
+                            <h5 className="work__title">{t("chemical.title2")}</h5>
+                        </Fade>
                     </div>
                 </div>
                 <div className="container">
